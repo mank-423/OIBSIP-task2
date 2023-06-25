@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- id="grad" -->
+    <!-- Navbar -->
+    <div>
+      <nav class="flex">
+        <div
+          class="w-2/12 font-bold justify-center item-center p-4 pl-5 text-xl flex"
+        >
+          ISCO
+        </div>
+        <div>
+          <img class="pt-2 mr-2" src="./images/rma.png" height="30" width="30">
+        </div>
+        <ul class="flex justify-center item-center font-bold p-4">
+          <a href="#abt"><li class="px-10">Home</li></a>
+          <a href=""><li class="px-10">About</li></a>
+          <a href=""><li class="px-10">Position</li></a>
+          <a href=""><li class="px-10">Statistics</li></a>
+          <a href=""><li class="px-10">Playing Style</li></a>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Carousel -->
+    <div>
+      <div class="carousel relative shadow-2xl bg-white">
+        <div class="carousel-inner relative overflow-hidden w-full">
+          <!--Slide 1-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-1"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="carousel-item absolute opacity-0" style="height: 600px">
+            <img src="images/nav.jpg" alt="" />
+          </div>
+          <label
+            for="carousel-3"
+            class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+            >‹</label
+          >
+          <label
+            for="carousel-2"
+            class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+            >›</label
+          >
+
+          <!--Slide 2-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-2"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item absolute opacity-0" style="height: 600px">
+            <img src="images/rma.jpg" alt="" />
+          </div>
+          <label
+            for="carousel-1"
+            class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+            >‹</label
+          >
+          <label
+            for="carousel-3"
+            class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+            >›</label
+          >
+
+          <!--Slide 3-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-3"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item absolute opacity-0" style="height: 600px">
+            <img src="images/liga.jpg" alt="" />
+          </div>
+          <label
+            for="carousel-2"
+            class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+            >‹</label
+          >
+          <label
+            for="carousel-1"
+            class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+            >›</label
+          >
+
+          <!-- Add additional indicators for each slide-->
+          <ol class="carousel-indicators">
+            <li class="inline-block mr-3">
+              <label
+                for="carousel-1"
+                class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+                >•</label
+              >
+            </li>
+            <li class="inline-block mr-3">
+              <label
+                for="carousel-2"
+                class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+                >•</label
+              >
+            </li>
+            <li class="inline-block mr-3">
+              <label
+                for="carousel-3"
+                class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+                >•</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="grid grid-cols-2 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 p-10" id="abt">
+      <div class="p-10">
+        <img
+          src="images/info.jpg"
+          class="pl-4 inline"
+          style="height: 400px"
+          alt=""
+        />
+      </div>
+      <div class="justify-center p-10">
+        <h1 class="font-bold underline text-center text-3xl">About Isco</h1>
+        <p class="p-10 pb-0">
+          Francisco Román Alarcón Suárez was commonly called as Isco. A spanish
+          professional footballer who is renowned for being part of the Real
+          Madrid who won 3 consecutive seasons. Isco was considered as one of
+          the best midfielders in his time, with some fantastic footwork and
+          cantrol of the ball.
+        </p>
+
+        <p class="p-10 pt-2">
+          &nbsp;&nbsp;&nbsp;&nbsp; Playing a vital role alongside
+          <a href="https://en.wikipedia.org/wiki/Toni_Kroos" class="font-bold">
+            Toni Kross</a
+          >
+          and
+          <a
+            href="https://en.wikipedia.org/wiki/Luka_Modri%C4%87"
+            class="font-bold"
+            >Luka Modric</a
+          >, won many titles in his career and contributed to Real Madrid's
+          success.
+        </p>
+      </div>
+    </div>
+
+    <!-- Position -->
+    <div class="grid grid-cols-2 p-10">
+      <div class="justify-center p-10">
+        <h1 class="font-bold underline text-center text-3xl">Position</h1>
+        <p class="p-10 pb-0">
+          Although specific roles of midfielders can change depending on their
+          unique talents, in general, the midfielders play in, well, the middle
+          of the field. This is generally considered to be the area between the
+          two penalty boxes.
+        </p>
+        <p class="p-10 pt-2">
+          &nbsp;&nbsp;&nbsp;&nbsp; One of the vital positions to handle for the
+          team to transition from defence to attack and vice-versa was bossed by
+          Isco and his teammates and was considered one of the best midfield
+          rooster in Europe and Club World Football.
+        </p>
+      </div>
+      <div>
+        <img
+          src="images/field.png"
+          class="float-right mr-20"
+          style="height: 400px; width: 400px"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Statistics -->
+    <div class="grid grid-cols-2 p-10" id="abt">
+        <div class="p-10">
+          <img
+            src="images/warm-up.jpg"
+            class="pl-5 inline"
+            style="height: 400px"
+            alt=""
+          />
+        </div>
+        <div class="justify-center p-10">
+          <h1 class="font-bold underline text-center text-3xl">Statistics</h1>
+          <p class="p-10 pb-0">
+            Club:
+            <table class="border-2 item-center">
+                <tr class="border-2">
+                    <th class=" p-2">Club</th>
+                    <th class=" p-2">Appearence</th>
+                    <th class=" p-2">Goals Scored</th>
+                </tr>
+
+                <tr>
+                    <td class=" p-2">Valencia</td>
+                    <td class=" p-2">56</td>
+                    <td class=" p-2">16</td>
+                </tr>
+
+                <tr>
+                    <td class=" p-2">Malaga</td>
+                    <td class=" p-2">82</td>
+                    <td class=" p-2">17</td>
+                </tr>
+
+                <tr>
+                    <td class=" p-2">Real Madrid</td>
+                    <td class=" p-2">353</td>
+                    <td class=" p-2">53</td>
+                </tr>
+
+                <tr>
+                    <td class=" p-2">Sevilla</td>
+                    <td class=" p-2">19</td>
+                    <td class=" p-2">1</td>
+                </tr>
+            </table>
+
+            International:
+            <table class="border-2 item-center">
+                <tr class="border-2">
+                    <th class=" p-2">Club</th>
+                    <th class=" p-2">Appearence</th>
+                    <th class=" p-2">Goals Scored</th>
+                </tr>
+                <tr>
+                    <td class=" p-2">Spain Football Federation</td>
+                    <td class=" p-2">38</td>
+                    <td class=" p-2">12</td>
+                </tr>
+            </table>
+          </p>
+        </div>
+      </div>
+
+    <!-- Style of Play -->
+    <div>
+        <h1 class="flex justify-center item-center font-bold text-3xl underline">Style of Play</h1>
+        <p class="p-10 pt-2 pb-2">A quick, skillful and creative player, with excellent technique and ball control, Isco is known for his natural ability to pick out an inch-perfect pass, dribble effortlessly through two or three challenges or drift a shot into the top corner of the goal.[60][61][62] His one-step-ahead reading of the game, his anticipation of space and the general directing of his side's performances are his most common traits.</p>
+        <p class="p-10 pt-0">&nbsp;&nbsp;In 2013, Isco was credited by Marca journalist Pablo Polo as being "the most promising young player in Spanish football", comparing his strength, skill, and low centre of gravity to Sergio Agüero, and his vision and passing abilities to Zinedine Zidane.[63] Former Real Madrid captain Iker Casillas predicted in 2015 that Isco would become Spain's most important player.</p>
+    </div>
+
+    <!-- Trophies won -->
+    <div class="grid grid-cols-2 p-10">
+        <div class="justify-center p-10">
+          <h1 class="font-bold underline text-center text-3xl">Trophies won</h1>
+          <p class="font-bold underline">Club level</p>
+          <ol class="p-4">
+            <li>La-Liga : 3 seasons</li>
+            <li>Copa Del Rey: 1 season</li>
+            <li>Uefa Champions League: 5 seasons</li>
+            <li>Uefa Super Cup: 3 seasons</li>
+            <li>FIFA Club World Cup: 4 seasons</li>
+          </ol>
+
+          <p class="font-bold underline p-2">International level</p>
+          <ol class="p-4">
+            <li>FIFA U17 World Cup: Third Place</li>
+            <li>UEFA U21 Championship Winner</li>
+          </ol>
+
+          <p class="font-bold underline p-2">Individual Level:</p>
+          <ol class="p-4">
+            <li>Part of FIFA World XI: 3 times</li>
+            <li>Golden Boy Award</li>
+            <li>La-Liga Breakthrough Player</li>
+          </ol>
+        </div>
+        <div>
+          <img
+            src="images/ucl.jpg"
+            class="float-right mr-20"
+            style="height: 400px;"
+            alt=""
+          />
+        </div>
+      </div>
+    <!-- Video -->
+    <div>
+        <h1 class="flex justify-center item-center font-bold text-xl">
+            Why he is the inspiration of many players today....
+        </h1>
+        <center>
+            <iframe width="800" height="400"
+            src="images/iscovid.mp4"
+            frameborder="0" allowfullscreen
+            >
+            </iframe>
+        </center>
+    
+    </div>
+  </body>
+</html>
